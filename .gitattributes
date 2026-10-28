@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
+
+# Tahap 17B - skrip Windows harus berakhir baris CRLF (cmd.exe bermasalah dengan LF pada label/goto)
+*.bat text eol=crlf
+*.ps1 text eol=crlf
